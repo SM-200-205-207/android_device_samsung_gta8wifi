@@ -73,9 +73,9 @@ vendor/lib64/libsprdaudiohalv6.so
 vendor/lib64/spatializer-aidl-V1-cpp.so
 
 # Audio configs
-etc/audio_effects.xml
-etc/audio_effects_common.conf
-etc/audio_effects_model.xml
+system/etc/audio_effects.xml
+system/etc/audio_effects_common.conf
+system/etc/audio_effects_model.xml
 vendor/etc/audio/sku_sprd/primary_audio_policy_configuration.xml
 vendor/etc/a2dpsink_audio_policy_configuration.xml
 vendor/etc/audio_effects.xml
@@ -115,34 +115,34 @@ vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 
 # Camera
-lib/libarcsoft_aiscenedetection.so
-lib/libarcsoft_beauty_outfocus.so
-lib/libarcsoft_beauty_performance.so
-lib/libarcsoft_beautyshot.so
-lib/libarcsoft_dehaze.so
-lib/libarcsoft_funnyface.so
-lib/libarcsoft_hdr_detection.so
-lib/libarcsoft_high_dynamic_range.so
-lib/libarcsoft_low_light_shot.so
-lib/libarcsoft_panorama.so
-lib/libarcsoft_singlecam_bokeh.so
-lib/libarcsoft_singlecam_bokeh_base.so
-lib/libarcsoft_supernight.so
-lib/libmpbase.so
-lib64/libarcsoft_aiscenedetection.so
-lib64/libarcsoft_beauty_outfocus.so
-lib64/libarcsoft_beauty_performance.so
-lib64/libarcsoft_beautyshot.so
-lib64/libarcsoft_dehaze.so
-lib64/libarcsoft_funnyface.so
-lib64/libarcsoft_hdr_detection.so
-lib64/libarcsoft_high_dynamic_range.so
-lib64/libarcsoft_low_light_shot.so
-lib64/libarcsoft_panorama.so
-lib64/libarcsoft_singlecam_bokeh.so
-lib64/libarcsoft_singlecam_bokeh_base.so
-lib64/libarcsoft_supernight.so
-lib64/libmpbase.so
+system/lib/libarcsoft_aiscenedetection.so
+system/lib/libarcsoft_beauty_outfocus.so
+system/lib/libarcsoft_beauty_performance.so
+system/lib/libarcsoft_beautyshot.so
+system/lib/libarcsoft_dehaze.so
+system/lib/libarcsoft_funnyface.so
+system/lib/libarcsoft_hdr_detection.so
+system/lib/libarcsoft_high_dynamic_range.so
+system/lib/libarcsoft_low_light_shot.so
+system/lib/libarcsoft_panorama.so
+system/lib/libarcsoft_singlecam_bokeh.so
+system/lib/libarcsoft_singlecam_bokeh_base.so
+system/lib/libarcsoft_supernight.so
+system/lib/libmpbase.so
+system/lib64/libarcsoft_aiscenedetection.so
+system/lib64/libarcsoft_beauty_outfocus.so
+system/lib64/libarcsoft_beauty_performance.so
+system/lib64/libarcsoft_beautyshot.so
+system/lib64/libarcsoft_dehaze.so
+system/lib64/libarcsoft_funnyface.so
+system/lib64/libarcsoft_hdr_detection.so
+system/lib64/libarcsoft_high_dynamic_range.so
+system/lib64/libarcsoft_low_light_shot.so
+system/lib64/libarcsoft_panorama.so
+system/lib64/libarcsoft_singlecam_bokeh.so
+system/lib64/libarcsoft_singlecam_bokeh_base.so
+system/lib64/libarcsoft_supernight.so
+system/lib64/libmpbase.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
 vendor/lib/hw/camera.ums512.so
@@ -328,30 +328,30 @@ vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib/libdatasource.so
-lib/libdatasource_local_cache.so
-lib/libhdcp2.so
-lib/libmedia_codeclist.so
-lib/libomafldrm.so
-lib/libstagefright_aidl_bufferpool2.so
-lib/libstagefright_bufferpool@2.0.1.so
-lib/libstagefright_codecbase.so
-lib/libstagefright_framecapture_utils.so
-lib/libstagefright_hdcp.so
-lib/libstagefright_httplive_sec.so
-lib/libstagefright_surface_utils.so
-lib/libtrusty.so
-lib64/libdatasource.so
-lib64/libdatasource_local_cache.so
-lib64/libmedia_codeclist.so
-lib64/libomafldrm.so
-lib64/libstagefright_aidl_bufferpool2.so
-lib64/libstagefright_bufferpool@2.0.1.so
-lib64/libstagefright_codecbase.so
-lib64/libstagefright_framecapture_utils.so
-lib64/libstagefright_surface_utils.so
-lib64/libtrusty.so
+system/etc/seccomp_policy/mediacodec.policy
+system/lib/libdatasource.so
+system/lib/libdatasource_local_cache.so
+system/lib/libhdcp2.so
+system/lib/libmedia_codeclist.so
+system/lib/libomafldrm.so
+system/lib/libstagefright_aidl_bufferpool2.so
+system/lib/libstagefright_bufferpool@2.0.1.so
+system/lib/libstagefright_codecbase.so
+system/lib/libstagefright_framecapture_utils.so
+system/lib/libstagefright_hdcp.so
+system/lib/libstagefright_httplive_sec.so
+system/lib/libstagefright_surface_utils.so
+system/lib/libtrusty.so
+system/lib64/libdatasource.so
+system/lib64/libdatasource_local_cache.so
+system/lib64/libmedia_codeclist.so
+system/lib64/libomafldrm.so
+system/lib64/libstagefright_aidl_bufferpool2.so
+system/lib64/libstagefright_bufferpool@2.0.1.so
+system/lib64/libstagefright_codecbase.so
+system/lib64/libstagefright_framecapture_utils.so
+system/lib64/libstagefright_surface_utils.so
+system/lib64/libtrusty.so
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 vendor/lib/libcodecsolutionhelper_vendor.so
@@ -409,9 +409,9 @@ vendor/lib64/hw/power.default.so
 system_ext/etc/init/data_rps.rc
 
 # Radio (IMS)
-bin/charon
-lib64/libcharon.so
-lib64/libstrongswan.so
+system/bin/charon
+system/lib64/libcharon.so
+system/lib64/libstrongswan.so
 
 # Reboot escrow
 vendor/bin/hw/android.hardware.rebootescrow-service.default

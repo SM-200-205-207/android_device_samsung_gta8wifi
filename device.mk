@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
     install-recovery.sh \
 
 PRODUCT_PACKAGES += \
+    fstab.ums512 \
     fstab.charge_mode \
     init.cali.rc \
     init.factorytest.rc \
@@ -50,6 +51,7 @@ PRODUCT_PACKAGES += \
     init.ums512_25c10.usb.rc \
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.ums512:$(TARGET_COPY_OUT_RAMDISK)/fstab.ums512 \
     $(LOCAL_PATH)/rootdir/etc/fstab.charge_mode:$(TARGET_COPY_OUT_RAMDISK)/fstab.charge_mode
 
 # Soong namespaces

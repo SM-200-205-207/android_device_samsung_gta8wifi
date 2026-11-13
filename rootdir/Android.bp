@@ -79,6 +79,11 @@ prebuilt_etc {
 
 // fstab
 prebuilt_etc {
+    name: "fstab.ums512",
+    src: "etc/fstab.ums512",
+    vendor: true,
+}
+prebuilt_etc {
     name: "fstab.charge_mode",
     src: "etc/fstab.charge_mode",
     vendor: true,

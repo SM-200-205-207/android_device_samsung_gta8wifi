@@ -85,3 +85,6 @@ ro.vendor.qti.va_aosp.support=1
 security.perf_harden=1
 sys.hqm.support=true
 
+
+# Telephony
+ro.radio.noril=yes
