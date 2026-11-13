@@ -1,0 +1,1 @@
+/dev/block/by-name/cache     /cache     ext4     noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic     wait,check
