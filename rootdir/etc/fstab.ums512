@@ -5,7 +5,7 @@
 
 
 system	/system	ext4	ro	avb,wait,logical,first_stage_mount
-system_ext	/system_ext	ext4	ro	wait,logical,first_stage_mount
+system_ext	/system_ext	ext4	ro	avb,wait,logical,first_stage_mount
 vendor	/vendor	ext4	ro	avb,wait,logical,first_stage_mount
 product	/product	ext4	ro	avb,wait,logical,first_stage_mount
 /dev/block/by-name/userdata	/data	f2fs	noatime,nosuid,nodev,discard,usrquota,grpquota,fsync_mode=nobarrier,reserve_root=32768,resgid=5678,inlinecrypt	latemount,wait,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,check,reservedsize=128M,checkpoint=fs,quota
@@ -26,8 +26,8 @@ product	/product	ext4	ro	avb,wait,logical,first_stage_mount
 /dev/block/by-name/vendor_efs	/mnt/vendor/efs	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check
 /dev/block/by-name/persist	/mnt/vendor/persist	ext4	noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic	wait,check
 #TAB A8 code for AX6300DEV-398 by zhaoxiangxiang at 2021/09/16 end
-/dev/block/by-name/prism     /prism    ext4 ro,barrier=1,discard    avb,nofail,first_stage_mount
-/dev/block/by-name/optics     /optics    ext4 ro,barrier=1,discard    avb,nofail,first_stage_mount
+/dev/block/by-name/prism     /prism    ext4 ro,barrier=1,discard    nofail,first_stage_mount
+/dev/block/by-name/optics     /optics    ext4 ro,barrier=1,discard    nofail,first_stage_mount
 
 # VOLD:n-ab_fstab
 /devices/platform/soc/soc:ap-apb/71100000.sdio/mmc_host/mmc1/mmc1:*/block/mmcblk1      auto         vfat defaults  voldmanaged=sdcard:auto

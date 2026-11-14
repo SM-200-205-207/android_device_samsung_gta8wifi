@@ -10,14 +10,14 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := 
-TARGET_CPU_VARIANT := cortex-a75
+TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := cortex-a75
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a55
+TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Bootloader
@@ -30,7 +30,7 @@ TARGET_SCREEN_DENSITY := 240
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 loop.max_part=7 cgroup.memory=nokmem androidboot.hardware=ums512_25c10 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 loop.max_part=7 cgroup.memory=nokmem androidboot.hardware=ums512_25c10 androidboot.fstab_suffix=ums512 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image
@@ -38,9 +38,15 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := gta8wifi_eur_open_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/gta8wifi
+TARGET_KERNEL_CLANG_VERSION := r416183b
+TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_LLVM_BINUTILS := false
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" \
+    KCFLAGS="-Wno-error"
 
 # Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_FORCE_PREBUILT_KERNEL := false
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
@@ -61,6 +67,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 52428800
 BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 52428800
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 52428800
@@ -125,7 +132,9 @@ include vendor/samsung/gta8wifi/BoardConfigVendor.mk
 # Shims
 TARGET_LD_SHIM_LIBS := \
     /vendor/lib/hw/camera.ums512.so|libshim_camera.so \
-    /vendor/bin/hw/android.hardware.camera.provider@2.4-service|libshim_camera.so
+    /vendor/bin/hw/android.hardware.camera.provider@2.4-service|libshim_camera.so \
+    /vendor/lib64/hw/hwcomposer.ums512.so|libui_shim.so \
+    /vendor/bin/hw/android.hardware.graphics.composer@2.3-service|libui_shim.so
 
 # Telephony
 TARGET_NO_TELEPHONY := true

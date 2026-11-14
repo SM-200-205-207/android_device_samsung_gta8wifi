@@ -42,7 +42,15 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libshim_camera
+    libshim_camera \
+    libui_shim \
+    libgui_shim
+
+# 32-Bit Legacy Audio & Camera Packages
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl:32 \
+    android.hardware.audio.effect@6.0-impl:32 \
+    libcamera2ndk_vendor
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
@@ -67,6 +75,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.ums512 \
+    fstab.ums512_25c10 \
     fstab.charge_mode \
     init.cali.rc \
     init.factorytest.rc \
@@ -77,7 +86,13 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums512:$(TARGET_COPY_OUT_RAMDISK)/fstab.ums512 \
-    $(LOCAL_PATH)/rootdir/etc/fstab.charge_mode:$(TARGET_COPY_OUT_RAMDISK)/fstab.charge_mode
+    $(LOCAL_PATH)/rootdir/etc/fstab.ums512:$(TARGET_COPY_OUT_RAMDISK)/fstab.ums512_25c10 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.ums512:$(TARGET_COPY_OUT_RAMDISK)/fstab.default \
+    $(LOCAL_PATH)/rootdir/etc/fstab.charge_mode:$(TARGET_COPY_OUT_RAMDISK)/fstab.charge_mode \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.ums512.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.ums512.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.ums512.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.ums512_25c10.rc \
+    $(LOCAL_PATH)/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json \
+    $(LOCAL_PATH)/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
