@@ -3,8 +3,13 @@
     <!-- Samsung Galaxy Tab A8 10.5" Wi-Fi (SM-X200 / gta8wifi) -->
     <!-- Device Tree -->
     <project name="Zoro-15/android-smx200-gta8wifi" path="device/samsung/gta8wifi" remote="github" revision="main" />
+
     <!-- Vendor Tree -->
     <project name="Zoro-15/proprietory-vendor-smx200-gta8wifi" path="vendor/samsung/gta8wifi" remote="github" revision="main" />
+
     <!-- Kernel Tree -->
     <project name="Zoro-15/android-kernel-smx200-gta8wifi" path="kernel/samsung/gta8wifi" remote="github" revision="android-14" />
+
+    <!-- Hardware / SPRD HAL dependencies -->
+    <project name="sprd-oss-devs/android_hardware_sprd" path="hardware/sprd" remote="github" revision="lineage-21" />
 </manifest>
