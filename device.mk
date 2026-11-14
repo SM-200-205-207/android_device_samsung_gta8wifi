@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.example
 
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_camera
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 

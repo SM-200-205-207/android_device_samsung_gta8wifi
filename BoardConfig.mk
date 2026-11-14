@@ -122,5 +122,10 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Inherit the proprietary files
 include vendor/samsung/gta8wifi/BoardConfigVendor.mk
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib/hw/camera.ums512.so|libshim_camera.so \
+    /vendor/bin/hw/android.hardware.camera.provider@2.4-service|libshim_camera.so
+
 # Telephony
 TARGET_NO_TELEPHONY := true
