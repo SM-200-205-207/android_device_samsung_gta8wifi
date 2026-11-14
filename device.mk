@@ -3,27 +3,48 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+LOCAL_PATH := $(call my-dir)
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# VNDK compatibility layer for Android 11 vendor blobs
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
 # fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock \
+    android.hardware.fastboot-service.example_recovery \
     fastbootd
 
-# Health
+# Health (AIDL)
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-impl.recovery \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.example \
+    android.hardware.health-service.example_recovery
+
+# Memtrack (AIDL)
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack-service.example
+
+# Lights (AIDL)
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.sprd
+
+# Power (AIDL)
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.example
+
+# USB (AIDL)
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.example
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # Partitions

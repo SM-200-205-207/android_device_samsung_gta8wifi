@@ -416,10 +416,6 @@ system/lib64/libstrongswan.so
 # Reboot escrow
 vendor/bin/hw/android.hardware.rebootescrow-service.default
 
-# RenderScript
-vendor/lib/hw/android.hardware.renderscript@1.0-impl.so
-vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so
-
 # Sensors
 vendor/bin/hw/android.hardware.sensors@1.0-service
 vendor/etc/init/android.hardware.sensors@1.0-service.rc
@@ -469,7 +465,6 @@ vendor/etc/wifi/wpa_supplicant.conf
 
 # Miscellaneous
 vendor/apex/com.samsung.android.camera.unihal.signed.apex
-vendor/apex/com.samsung.android.wifi.broadcom.signed.apex
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.face@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
@@ -533,7 +528,6 @@ vendor/bin/power/paras/readme
 vendor/bin/power/tops/readme
 vendor/bin/power/tops/tops
 vendor/bin/power/total/readme
-vendor/bin/applypatch
 vendor/bin/audiodumpclient
 vendor/bin/boringssl_self_test32
 vendor/bin/boringssl_self_test64
@@ -546,7 +540,6 @@ vendor/bin/cplay
 vendor/bin/cplogctl
 vendor/bin/cplogsvcctl
 vendor/bin/dcxsrv
-vendor/bin/dumpsys
 vendor/bin/emservice
 vendor/bin/engpc
 vendor/bin/engpcctl
@@ -556,7 +549,6 @@ vendor/bin/flush_slog_modem
 vendor/bin/fsdbg_vendor
 vendor/bin/gpsd
 vendor/bin/grdm_test
-vendor/bin/hal.json
 vendor/bin/hqread
 vendor/bin/hwsim.json
 vendor/bin/hwsim_case.json

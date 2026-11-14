@@ -68,7 +68,6 @@ ro.build.version.security_index=1
 ro.build.version.sem=3401
 ro.build.version.sep=150100
 ro.config.dmverity=G
-ro.config.knox=v30
 ro.config.rm_preload_enabled=1
 ro.dalvik.vm.native.bridge=0
 ro.fta_hw_ver=REV1.0
@@ -76,15 +75,14 @@ ro.fta_sw_ver=X200.001
 ro.kernel.qemu=0
 ro.oem_unlock_supported=1
 ro.postinstall.fstab.prefix=/system
-ro.product_ship=true
+ro.product_ship=false
 ro.qq.camera.sensor=3
 ro.security.fips.ux=Disabled
 ro.system.build.version.sehi=3403
 ro.system.qb.id=99124382
-ro.vendor.qti.va_aosp.support=1
 security.perf_harden=1
-sys.hqm.support=true
+sys.hqm.support=false
 
 
 # Telephony
-ro.radio.noril=yes
+ro.radio.noril=true
