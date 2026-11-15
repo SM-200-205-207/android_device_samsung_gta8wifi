@@ -66,10 +66,6 @@
         <fqname>IHealth/default</fqname>
     </hal>
     <hal format="aidl">
-        <name>android.hardware.light</name>
-        <fqname>ILights/default</fqname>
-    </hal>
-    <hal format="aidl">
         <name>android.hardware.memtrack</name>
         <fqname>IMemtrack/default</fqname>
     </hal>

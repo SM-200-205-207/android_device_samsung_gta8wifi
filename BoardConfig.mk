@@ -42,6 +42,10 @@ TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_LLVM_BINUTILS := false
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    BSP_BUILD_FAMILY=sharkl5Pro \
+    BSP_BUILD_ANDROID_OS=y \
+    BSP_BUILD_DT_OVERLAY=y \
+    HOST_LOADLIBES="-lyaml" \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" \
     KCFLAGS="-Wno-error"
 
@@ -134,7 +138,8 @@ TARGET_LD_SHIM_LIBS := \
     /vendor/lib/hw/camera.ums512.so|libshim_camera.so \
     /vendor/bin/hw/android.hardware.camera.provider@2.4-service|libshim_camera.so \
     /vendor/lib64/hw/hwcomposer.ums512.so|libui_shim.so \
-    /vendor/bin/hw/android.hardware.graphics.composer@2.3-service|libui_shim.so
+    /vendor/bin/hw/android.hardware.graphics.composer@2.3-service|libui_shim.so \
+    /vendor/lib/libstagefright_omx.so|libgui_shim.so
 
 # Telephony
 TARGET_NO_TELEPHONY := true

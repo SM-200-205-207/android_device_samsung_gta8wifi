@@ -49,8 +49,7 @@ PRODUCT_PACKAGES += \
 # 32-Bit Legacy Audio & Camera Packages
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl:32 \
-    android.hardware.audio.effect@6.0-impl:32 \
-    libcamera2ndk_vendor
+    android.hardware.audio.effect@6.0-impl:32
 
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
