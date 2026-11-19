@@ -142,7 +142,6 @@ PRODUCT_PACKAGES += \
     libcodec2_sec_aacdec \
     libcodec2_sec_imadec \
     libhyper_vnd \
-    liblte \
     libpowerhal_cli \
     libsprdaudiohal@5.0 \
     libsprdaudiohal@6.0 \

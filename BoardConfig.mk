@@ -22,6 +22,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 BOARD_SHIPPING_API_LEVEL := 30
+BOARD_VNDK_VERSION := current
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := ums512_25c10
@@ -68,9 +69,9 @@ TARGET_SCREEN_DENSITY := 240
 
 # Dynamic partitions
 AB_OTA_UPDATER := false
-BOARD_SUPER_PARTITION_GROUPS := group_unisoc
-BOARD_GROUP_UNISOC_SIZE := 6736052224
-BOARD_GROUP_UNISOC_PARTITION_LIST := system system_ext product vendor
+BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
+BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 6736052224
+BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext product vendor
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -163,3 +164,5 @@ BOARD_WPA_SUPPLICANT_HAL := hardware/interfaces/wifi/supplicant/aidl
 
 # Telephony
 TARGET_NO_TELEPHONY := true
+
+include vendor/samsung/gta8wifi/BoardConfigVendor.mk

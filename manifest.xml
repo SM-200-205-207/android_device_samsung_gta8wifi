@@ -11,7 +11,7 @@
         manifest.xml
         manifest.xml
 -->
-<manifest version="2.0" type="device" target-level="7">
+<manifest version="2.0" type="device" target-level="5">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -32,15 +32,10 @@
         </interface>
         <fqname>@6.0::IEffectsFactory/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="aidl">
         <name>android.hardware.biometrics.face</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBiometricsFace</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBiometricsFace/default</fqname>
+        <version>3</version>
+        <fqname>IFace/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
@@ -129,25 +124,21 @@
         <fqname>@1.0::IOmx/default</fqname>
         <fqname>@1.0::IOmxStore/default</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="aidl">
         <name>android.hardware.memtrack</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IMemtrack</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IMemtrack/default</fqname>
+        <fqname>IMemtrack/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.renderscript</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDevice/default</fqname>
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <fqname>IPower/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.security.keymint</name>
+        <fqname>IKeyMintDevice/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.lineage.health</name>
+        <fqname>IChargingControl/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
