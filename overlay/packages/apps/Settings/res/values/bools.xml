@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- Hide SIM status and cellular configuration menus -->
-    <bool name="config_show_sim_info">false</bool>
-</resources>
-

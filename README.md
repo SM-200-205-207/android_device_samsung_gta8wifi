@@ -53,6 +53,8 @@ Or manually create `.repo/local_manifests/gta8wifi.xml`:
     <project name="Zoro-15/proprietory-vendor-smx200-gta8wifi" path="vendor/samsung/gta8wifi" remote="github" revision="main" />
     <!-- Kernel Tree -->
     <project name="Zoro-15/android-kernel-smx200-gta8wifi" path="kernel/samsung/gta8wifi" remote="github" revision="android-14" />
+    <!-- Hardware / SPRD HAL dependencies -->
+    <project name="sprd-oss-devs/android_hardware_sprd" path="hardware/sprd" remote="github" revision="lineage-21" />
 </manifest>
 ```
 
@@ -70,26 +72,9 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 source build/envsetup.sh
 
 # 2. Select target
-lunch lineage_gta8wifi-ap2a-userdebug
+lunch lineage_gta8wifi-userdebug
 
 # 3. Compile full ROM package
 mka bacon -j$(nproc --all)
 ```
-
----
-
-## Flashing & Installation Protocol
-
-### Dynamic Partition Metadata (`samsung_dynamic_partitions`)
-The stock Samsung PIT table names the hardware dynamic partition group `group_unisoc`. LineageOS standardizes on `samsung_dynamic_partitions`.
-
-To prevent FastbootD logical partition group mapping rejections when transitioning from stock firmware:
-1. **Initial Odin / LOKE Installation (Recommended)**:
-   - Build `super.img`: `mka superimage`
-   - Archive into tar: `tar -cvf super_gta8wifi.tar super.img`
-   - Flash `super_gta8wifi.tar` via Odin download mode to write the `samsung_dynamic_partitions` LP metadata table.
-2. **FastbootD Clean Installation**:
-   - In FastbootD recovery, execute: `fastboot wipe-super` before flashing individual dynamic partition images (`system`, `system_ext`, `vendor`, `product`).
-3. **Recovery ZIP Installation**:
-   - Standard LineageOS recovery update zips automatically update dynamic partition metadata via `update_dynamic_partitions`.
 

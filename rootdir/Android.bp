@@ -77,19 +77,10 @@ prebuilt_etc {
     vendor: true,
 }
 
-// fstab
+
 prebuilt_etc {
-    name: "fstab.ums512",
-    src: "etc/fstab.ums512",
-    vendor: true,
-}
-prebuilt_etc {
-    name: "fstab.ums512_25c10",
-    src: "etc/fstab.ums512",
-    vendor: true,
-}
-prebuilt_etc {
-    name: "fstab.charge_mode",
-    src: "etc/fstab.charge_mode",
+    name: "init.flash_recovery.rc",
+    src: "etc/init.flash_recovery.rc",
+    sub_dir: "init",
     vendor: true,
 }

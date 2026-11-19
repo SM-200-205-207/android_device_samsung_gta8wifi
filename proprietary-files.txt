@@ -1,36 +1,22 @@
 # Unpinned blobs from gta8wifixx-user 14 UP1A.231005.007 X200XXS6DYG6 release-keys
 
 # Audio
-vendor/bin/hw/android.hardware.audio.service
-vendor/etc/init/android.hardware.audio.service.rc
-vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib/hw/android.hardware.audio@2.0-impl.so
-vendor/lib/hw/android.hardware.audio@6.0-impl.so
 vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.ums512.so
 vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.usb.default.so
 vendor/lib/libalsa_utils.so
-vendor/lib/libalsautils.so
 vendor/lib/libatci.so
 vendor/lib/libaudiodump.so
 vendor/lib/libaudiomiscctl.so
-vendor/lib/libpowerhal_cli.so
 vendor/lib/libtinycompress_util.so
 vendor/lib/libtinyxml.so
 vendor/lib/libunisocpreprocessing.so
 vendor/lib/vendor.sprd.hardware.radio@1.0.so
-vendor/lib64/hw/android.hardware.audio.effect@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so
-vendor/lib64/hw/android.hardware.audio@2.0-impl.so
-vendor/lib64/hw/android.hardware.audio@6.0-impl.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.usb.default.so
-vendor/lib64/libalsautils.so
 vendor/lib64/libatci.so
-vendor/lib64/libpowerhal_cli.so
 vendor/lib64/vendor.sprd.hardware.radio@1.0.so
 
 # Audio (FX modules)
@@ -71,16 +57,12 @@ vendor/lib64/libsprdaudiohalv6.so
 vendor/lib64/spatializer-aidl-V1-cpp.so
 
 # Audio configs
-system/etc/audio_effects.xml
-system/etc/audio_effects_common.conf
-system/etc/audio_effects_model.xml
 vendor/etc/audio/sku_sprd/primary_audio_policy_configuration.xml
 vendor/etc/a2dpsink_audio_policy_configuration.xml
 vendor/etc/audio_effects.xml
 vendor/etc/audio_effects_common.conf
 vendor/etc/audio_effects_sec.xml
 vendor/etc/audio_effects_spatializer.xml
-vendor/etc/audio_policy_configuration.xml
 vendor/etc/audio_policy_configuration_sec.xml
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/bluetooth_audio_policy_configuration.xml
@@ -99,11 +81,9 @@ vendor/lib/libbt-vendor.so
 vendor/lib64/libbt-vendor.so
 
 # Bluetooth (A2DP)
-vendor/lib/hw/audio.bluetooth.default.so
 vendor/lib/libsehbluetooth_audio_session.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.0.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio@2.1.so
-vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/libsehbluetooth_audio_session.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.0.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio@2.1.so
@@ -113,37 +93,8 @@ vendor/lib/hw/android.hardware.broadcastradio@1.0-impl.so
 vendor/lib64/hw/android.hardware.broadcastradio@1.0-impl.so
 
 # Camera
-system/lib/libarcsoft_aiscenedetection.so
-system/lib/libarcsoft_beauty_outfocus.so
-system/lib/libarcsoft_beauty_performance.so
-system/lib/libarcsoft_beautyshot.so
-system/lib/libarcsoft_dehaze.so
-system/lib/libarcsoft_funnyface.so
-system/lib/libarcsoft_hdr_detection.so
-system/lib/libarcsoft_high_dynamic_range.so
-system/lib/libarcsoft_low_light_shot.so
-system/lib/libarcsoft_panorama.so
-system/lib/libarcsoft_singlecam_bokeh.so
-system/lib/libarcsoft_singlecam_bokeh_base.so
-system/lib/libarcsoft_supernight.so
-system/lib/libmpbase.so
-system/lib64/libarcsoft_aiscenedetection.so
-system/lib64/libarcsoft_beauty_outfocus.so
-system/lib64/libarcsoft_beauty_performance.so
-system/lib64/libarcsoft_beautyshot.so
-system/lib64/libarcsoft_dehaze.so
-system/lib64/libarcsoft_funnyface.so
-system/lib64/libarcsoft_hdr_detection.so
-system/lib64/libarcsoft_high_dynamic_range.so
-system/lib64/libarcsoft_low_light_shot.so
-system/lib64/libarcsoft_panorama.so
-system/lib64/libarcsoft_singlecam_bokeh.so
-system/lib64/libarcsoft_singlecam_bokeh_base.so
-system/lib64/libarcsoft_supernight.so
-system/lib64/libmpbase.so
 vendor/bin/hw/android.hardware.camera.provider@2.4-service
 vendor/etc/init/android.hardware.camera.provider@2.4-service.rc
-vendor/lib/hw/camera.ums512.so
 vendor/lib/camera.device@1.0-impl.so
 vendor/lib/camera.device@3.2-impl-sprd.so
 vendor/lib/camera.device@3.3-impl-sprd.so
@@ -245,27 +196,21 @@ vendor/etc/camera/mfnr_arrays.json
 # CAS
 vendor/bin/hw/android.hardware.cas@1.2-service
 vendor/etc/init/android.hardware.cas@1.2-service.rc
-vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
-vendor/bin/hw/android.hardware.graphics.composer@2.3-service
+vendor/bin/hw/android.hardware.memtrack@1.0-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
-vendor/etc/init/android.hardware.graphics.composer@2.3-service.rc
 vendor/lib/egl/libGLES_mali.so
 vendor/lib/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib/hw/gralloc.default.so
-vendor/lib/hw/hwcomposer.ums512.so
 vendor/lib/hw/memtrack.ums512.so
-vendor/lib/hw/vulkan.ums512.so
 vendor/lib/arm.graphics-V2-ndk_platform.so
 vendor/lib/vendor.sprd.hardware.enhance@1.0.so
 vendor/lib64/egl/libGLES_mali.so
 vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so
 vendor/lib64/hw/gralloc.default.so
-vendor/lib64/hw/hwcomposer.ums512.so
 vendor/lib64/hw/memtrack.ums512.so
-vendor/lib64/hw/vulkan.ums512.so
 vendor/lib64/arm.graphics-V2-ndk_platform.so
 vendor/lib64/libhwc2onfbadapter.so
 vendor/lib64/vendor.sprd.hardware.enhance@1.0.so
@@ -277,15 +222,9 @@ vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib/mediacas/libclearkeycasplugin.so
 vendor/lib/mediadrm/libdrmclearkeyplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/liboemcrypto.so
-vendor/lib/libtrusty.so
-vendor/lib/libwvhidl.so
-vendor/lib64/mediacas/libclearkeycasplugin.so
 vendor/lib64/mediadrm/libdrmclearkeyplugin.so
-vendor/lib64/libtrusty.so
 
 # Dumpstate
 vendor/bin/hw/android.hardware.dumpstate@1.1-service-lazy
@@ -293,9 +232,6 @@ vendor/etc/init/android.hardware.dumpstate@1.1-service-lazy.rc
 vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
 
 # Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service.trusty
-vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc
-vendor/etc/vintf/manifest/android.hardware.gatekeeper@1.0-service.trusty.xml
 
 # GNSS
 vendor/lib/hw/gps.default.so
@@ -303,17 +239,14 @@ vendor/lib64/hw/android.hardware.gnss@2.1-impl.so
 vendor/lib64/hw/gps.default.so
 
 # Health
+vendor/bin/hw/android.hardware.health@2.1-service-samsung
+vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
+vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/vendor.samsung.hardware.health@2.0.so
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service
-vendor/etc/init/android.hardware.keymaster@4.0-service.rc
 vendor/lib64/libgrdm.so
-vendor/lib64/libkeymaster4.so
-vendor/lib64/libkeymaster4_1support.so
-vendor/lib64/libkeymaster_helper.so
-vendor/lib64/libskeymaster4device.so
 vendor/lib64/libteec.so
 
 # Local time
@@ -321,56 +254,16 @@ vendor/lib/hw/local_time.default.so
 vendor/lib64/hw/local_time.default.so
 
 # Media
-system/etc/seccomp_policy/mediacodec.policy
-system/lib/libdatasource.so
-system/lib/libdatasource_local_cache.so
-system/lib/libhdcp2.so
-system/lib/libmedia_codeclist.so
-system/lib/libomafldrm.so
-system/lib/libstagefright_aidl_bufferpool2.so
-system/lib/libstagefright_bufferpool@2.0.1.so
-system/lib/libstagefright_codecbase.so
-system/lib/libstagefright_framecapture_utils.so
-system/lib/libstagefright_hdcp.so
-system/lib/libstagefright_httplive_sec.so
-system/lib/libstagefright_surface_utils.so
-system/lib/libtrusty.so
-system/lib64/libdatasource.so
-system/lib64/libdatasource_local_cache.so
-system/lib64/libmedia_codeclist.so
-system/lib64/libomafldrm.so
-system/lib64/libstagefright_aidl_bufferpool2.so
-system/lib64/libstagefright_bufferpool@2.0.1.so
-system/lib64/libstagefright_codecbase.so
-system/lib64/libstagefright_framecapture_utils.so
-system/lib64/libstagefright_surface_utils.so
-system/lib64/libtrusty.so
 vendor/bin/hw/android.hardware.media.omx@1.0-service
 vendor/etc/init/android.hardware.media.omx@1.0-service.rc
+vendor/etc/init/android.hardware.audio.service.rc
+vendor/etc/init/android.hardware.memtrack@1.0-service.rc
+vendor/etc/init/android.hardware.power.stats@1.0-service.rc
+vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/lib/libcodecsolutionhelper_vendor.so
-vendor/lib/libstagefright_bufferpool@2.0.1.so
-vendor/lib/libstagefright_bufferqueue_helper_vendor.so
-vendor/lib/libstagefright_omx_vendor.so
 vendor/lib/libstagefright_soft_mjpgdec.so
-vendor/lib/libstagefright_softomx_plugin.so
-vendor/lib/libstagefright_sprd_av1dec.so
-vendor/lib/libstagefright_sprd_deintl.so
-vendor/lib/libstagefright_sprd_h264dec.so
-vendor/lib/libstagefright_sprd_h264enc.so
-vendor/lib/libstagefright_sprd_h265dec.so
-vendor/lib/libstagefright_sprd_h265enc.so
-vendor/lib/libstagefright_sprd_mp3dec.so
-vendor/lib/libstagefright_sprd_mp3enc.so
-vendor/lib/libstagefright_sprd_mpeg4dec.so
-vendor/lib/libstagefright_sprd_mpeg4enc.so
-vendor/lib/libstagefright_sprd_vp9dec.so
-vendor/lib/libstagefright_sprd_vpxdec.so
-vendor/lib/libstagefrighthw.so
 vendor/lib/vintf-codecsolution-V1-ndk_platform.so
 vendor/lib64/libcodecsolutionhelper_vendor.so
-vendor/lib64/libstagefright_bufferpool@2.0.1.so
-vendor/lib64/libstagefright_sprd_av1dec.so
-vendor/lib64/libstagefrighthw.so
 vendor/lib64/vintf-codecsolution-V1-ndk_platform.so
 
 # Media (Dolby)
@@ -378,7 +271,6 @@ vendor/etc/dolby/dax-default.xml
 vendor/lib64/libdeccfg.so
 
 # Media configs
-vendor/etc/media_codecs.xml
 vendor/etc/media_codecs_c2.xml
 vendor/etc/media_codecs_c2_sec.xml
 vendor/etc/media_codecs_c2_sec_ape.xml
@@ -386,7 +278,6 @@ vendor/etc/media_codecs_c2_sec_qcp.xml
 vendor/etc/media_codecs_dolby_audio.xml
 vendor/etc/media_codecs_google_audio.xml
 vendor/etc/media_codecs_google_telephony.xml
-vendor/etc/media_codecs_performance.xml
 vendor/etc/media_codecs_performance_c2.xml
 vendor/etc/media_profiles_V1_0.xml
 vendor/etc/media_profiles_turnkey.xml
@@ -396,19 +287,14 @@ vendor/lib/hw/power.default.so
 vendor/lib64/hw/power.default.so
 
 # Radio
-system_ext/etc/init/data_rps.rc
 
 # Radio (IMS)
-system/bin/charon
-system/lib64/libcharon.so
-system/lib64/libstrongswan.so
 
 # Reboot escrow
-vendor/bin/hw/android.hardware.rebootescrow-service.default
+
 
 # Sensors
 vendor/bin/hw/android.hardware.sensors@1.0-service
-vendor/etc/init/android.hardware.sensors@1.0-service.rc
 vendor/lib/hw/android.hardware.sensors@1.0-impl.so
 vendor/lib/hw/sensors.ums512.so
 vendor/lib/libsensorlistcfg.so
@@ -422,11 +308,13 @@ vendor/lib64/libsensorsdrvcfg.so
 vendor/lib/hw/android.hardware.soundtrigger@2.0-impl.so
 
 # Thermal
-vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.xml
 vendor/lib/hw/thermal.default.so
 vendor/lib64/hw/thermal.default.so
 
 # USB
+vendor/bin/hw/android.hardware.usb@1.3-service.coral
+vendor/etc/init/android.hardware.usb@1.3-service.coral.rc
+vendor/etc/vintf/manifest/android.hardware.usb@1.3-service.coral.xml
 
 # Vibrator
 vendor/lib/hw/vibrator.default.so
@@ -435,10 +323,7 @@ vendor/lib64/hw/vibrator.default.so
 # Wi-Fi
 vendor/bin/hw/android.hardware.wifi@1.0-service
 vendor/bin/hw/hostapd
-vendor/bin/hw/wpa_supplicant
-vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/android.hardware.wifi@1.0-service.rc
-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml
 vendor/lib/libwifi-hal.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
@@ -448,11 +333,11 @@ vendor/lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so
 vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
 
 # Wi-Fi configs
-vendor/etc/wifi/wpa_supplicant.conf
 
 # Miscellaneous
 vendor/apex/com.samsung.android.camera.unihal.signed.apex
-vendor/bin/hw/samsung.software.media.c2@1.0-service
+vendor/apex/com.samsung.android.wifi.broadcom.signed.apex
+vendor/bin/hw/samsung.software.media.c2@1.0-service;DISABLE_CHECKELF
 vendor/bin/hw/vendor.samsung.hardware.biometrics.face@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
@@ -466,7 +351,6 @@ vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.kg@1.1-service
 vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/hw/vendor.sprd.hardware.athuaqin@1.0-service
-vendor/bin/hw/vendor.sprd.hardware.broadcastradio@2.0-service
 vendor/bin/hw/vendor.sprd.hardware.connmgr@1.0-service
 vendor/bin/hw/vendor.sprd.hardware.cplog_connmgr@1.0-service
 vendor/bin/hw/vendor.sprd.hardware.cplog_svc@1.0-service
@@ -476,46 +360,24 @@ vendor/bin/hw/vendor.sprd.hardware.network@1.0-service
 vendor/bin/hw/vendor.sprd.hardware.thermal@2.0-service
 vendor/bin/hw/vendor.sprd.hardware.trusty@1.0-service
 vendor/bin/hw/vendor.sprd.hardware.wcn@1.0-service
-vendor/bin/power/backlight/readme
-vendor/bin/power/cpu/dvfs/readme
 vendor/bin/power/cpu/fix_freq/fix_cpu_freq
-vendor/bin/power/cpu/fix_freq/readme
-vendor/bin/power/cpu/hotplug/readme
 vendor/bin/power/cpu/lit_freq/lit_cpu_freq
-vendor/bin/power/cpu/lit_freq/readme
 vendor/bin/power/cpu/loading/cpu_loading
-vendor/bin/power/cpu/loading/readme
 vendor/bin/power/cpu/trans_table/cpu_trans_table
-vendor/bin/power/cpu/trans_table/readme
 vendor/bin/power/ddr/bm/tool/ddr_bm
 vendor/bin/power/ddr/bm/tool/ddr_bm_log
 vendor/bin/power/ddr/bm/tool/sharkl5Pro_cm4_disable_smart_light.bin
-vendor/bin/power/ddr/bm/readme
 vendor/bin/power/ddr/fix_freq/fix_ddr_freq
-vendor/bin/power/ddr/fix_freq/readme
 vendor/bin/power/ddr/loading/ddr_loading
-vendor/bin/power/ddr/loading/readme
 vendor/bin/power/ddr/trans_table/ddr_trans_table
-vendor/bin/power/ddr/trans_table/readme
 vendor/bin/power/frame/fps_sf
-vendor/bin/power/frame/readme
 vendor/bin/power/gpu/fix_freq/fix_gpu_freq
-vendor/bin/power/gpu/fix_freq/readme
 vendor/bin/power/gpu/loading/gpu_loading
-vendor/bin/power/gpu/loading/readme
 vendor/bin/power/gpu/trans_table/gpu_trans_table
-vendor/bin/power/gpu/trans_table/readme
 vendor/bin/power/interrupt/interrupt
-vendor/bin/power/interrupt/readme
-vendor/bin/power/loadings/readme
 vendor/bin/power/paras/tool/paras
-vendor/bin/power/paras/readme
-vendor/bin/power/tops/readme
 vendor/bin/power/tops/tops
-vendor/bin/power/total/readme
 vendor/bin/audiodumpclient
-vendor/bin/boringssl_self_test32
-vendor/bin/boringssl_self_test64
 vendor/bin/btools
 vendor/bin/connmgr
 vendor/bin/connmgr_cli
@@ -534,6 +396,7 @@ vendor/bin/flush_slog_modem
 vendor/bin/fsdbg_vendor
 vendor/bin/gpsd
 vendor/bin/grdm_test
+vendor/bin/hal.json
 vendor/bin/hqread
 vendor/bin/hwsim.json
 vendor/bin/hwsim_case.json
@@ -552,7 +415,6 @@ vendor/bin/slogmodem_vendor
 vendor/bin/sprdstorageproxyd
 vendor/bin/srtd
 vendor/bin/storkd
-vendor/bin/systemDebuggerd
 vendor/bin/tee_rpc
 vendor/bin/thermald
 vendor/bin/tsupplicant
@@ -602,13 +464,6 @@ vendor/etc/aiimg/front/BG_CAP_1_1.jpg
 vendor/etc/aiimg/front/BG_CAP_1_2.jpg
 vendor/etc/aiimg/front/BG_CAP_1_3.jpg
 vendor/etc/aiimg/front/BG_CAP_1_4.jpg
-vendor/etc/audio_params/CHN/audio_pga.xml
-vendor/etc/audio_params/CHN/audio_process.xml
-vendor/etc/audio_params/CHN/audio_structure.xml
-vendor/etc/audio_params/CHN/audioparam_config.xml
-vendor/etc/audio_params/CHN/codec.xml
-vendor/etc/audio_params/CHN/cvs.xml
-vendor/etc/audio_params/CHN/dsp_vbc.xml
 vendor/etc/audio_params/EUR/audio_pga.xml
 vendor/etc/audio_params/EUR/audio_process.xml
 vendor/etc/audio_params/EUR/audio_structure.xml
@@ -616,62 +471,6 @@ vendor/etc/audio_params/EUR/audioparam_config.xml
 vendor/etc/audio_params/EUR/codec.xml
 vendor/etc/audio_params/EUR/cvs.xml
 vendor/etc/audio_params/EUR/dsp_vbc.xml
-vendor/etc/audio_params/HONGKONG/audio_pga.xml
-vendor/etc/audio_params/HONGKONG/audio_process.xml
-vendor/etc/audio_params/HONGKONG/audio_structure.xml
-vendor/etc/audio_params/HONGKONG/audioparam_config.xml
-vendor/etc/audio_params/HONGKONG/codec.xml
-vendor/etc/audio_params/HONGKONG/cvs.xml
-vendor/etc/audio_params/HONGKONG/dsp_vbc.xml
-vendor/etc/audio_params/KOR/audio_pga.xml
-vendor/etc/audio_params/KOR/audio_process.xml
-vendor/etc/audio_params/KOR/audio_structure.xml
-vendor/etc/audio_params/KOR/audioparam_config.xml
-vendor/etc/audio_params/KOR/codec.xml
-vendor/etc/audio_params/KOR/cvs.xml
-vendor/etc/audio_params/KOR/dsp_vbc.xml
-vendor/etc/audio_params/LA/audio_pga.xml
-vendor/etc/audio_params/LA/audio_process.xml
-vendor/etc/audio_params/LA/audio_structure.xml
-vendor/etc/audio_params/LA/audioparam_config.xml
-vendor/etc/audio_params/LA/codec.xml
-vendor/etc/audio_params/LA/cvs.xml
-vendor/etc/audio_params/LA/dsp_vbc.xml
-vendor/etc/audio_params/MEA/audio_pga.xml
-vendor/etc/audio_params/MEA/audio_process.xml
-vendor/etc/audio_params/MEA/audio_structure.xml
-vendor/etc/audio_params/MEA/audioparam_config.xml
-vendor/etc/audio_params/MEA/codec.xml
-vendor/etc/audio_params/MEA/cvs.xml
-vendor/etc/audio_params/MEA/dsp_vbc.xml
-vendor/etc/audio_params/NA/audio_pga.xml
-vendor/etc/audio_params/NA/audio_process.xml
-vendor/etc/audio_params/NA/audio_structure.xml
-vendor/etc/audio_params/NA/audioparam_config.xml
-vendor/etc/audio_params/NA/codec.xml
-vendor/etc/audio_params/NA/cvs.xml
-vendor/etc/audio_params/NA/dsp_vbc.xml
-vendor/etc/audio_params/SEA/audio_pga.xml
-vendor/etc/audio_params/SEA/audio_process.xml
-vendor/etc/audio_params/SEA/audio_structure.xml
-vendor/etc/audio_params/SEA/audioparam_config.xml
-vendor/etc/audio_params/SEA/codec.xml
-vendor/etc/audio_params/SEA/cvs.xml
-vendor/etc/audio_params/SEA/dsp_vbc.xml
-vendor/etc/audio_params/SWA/audio_pga.xml
-vendor/etc/audio_params/SWA/audio_process.xml
-vendor/etc/audio_params/SWA/audio_structure.xml
-vendor/etc/audio_params/SWA/audioparam_config.xml
-vendor/etc/audio_params/SWA/codec.xml
-vendor/etc/audio_params/SWA/cvs.xml
-vendor/etc/audio_params/SWA/dsp_vbc.xml
-vendor/etc/audio_params/TAIWAN/audio_pga.xml
-vendor/etc/audio_params/TAIWAN/audio_process.xml
-vendor/etc/audio_params/TAIWAN/audio_structure.xml
-vendor/etc/audio_params/TAIWAN/audioparam_config.xml
-vendor/etc/audio_params/TAIWAN/codec.xml
-vendor/etc/audio_params/TAIWAN/cvs.xml
-vendor/etc/audio_params/TAIWAN/dsp_vbc.xml
 vendor/etc/audio_params/sprd/audio_pga.xml
 vendor/etc/audio_params/sprd/audio_process.xml
 vendor/etc/audio_params/sprd/audio_structure.xml
@@ -699,7 +498,6 @@ vendor/etc/hyper/config_chipset.json
 vendor/etc/hyper/config_hyper_permission.json
 vendor/etc/hyper/config_vendor.json
 vendor/etc/init/autotest.rc
-vendor/etc/init/boringssl_self_test.rc
 vendor/etc/init/camera.rc
 vendor/etc/init/connmgr.rc
 vendor/etc/init/cp_diskserver.rc
@@ -707,7 +505,6 @@ vendor/etc/init/dcxsrv.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/engpc.rc
 vendor/etc/init/factorytest.rc
-vendor/etc/init/hostapd.android.rc
 vendor/etc/init/hyper-default-sec.rc
 vendor/etc/init/init.gps.rc
 vendor/etc/init/init.leddrv.rc
@@ -717,45 +514,34 @@ vendor/etc/init/init.sprd_flash.rc
 vendor/etc/init/init.sprd_vdsp.rc
 vendor/etc/init/init.vendor.sysfw.rc
 vendor/etc/init/init.vibdrv.rc
+vendor/etc/init/lights-default-sec.rc
 vendor/etc/init/mlogservice.rc
 vendor/etc/init/modem_control.rc
 vendor/etc/init/nhMonitorCtrl.rc
 vendor/etc/init/phasecheckserver.rc
-vendor/etc/init/rebootescrow-default.rc
 vendor/etc/init/rpmbserver_androidr.rc
 vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/etc/init/slogmodem_vendor.rc
 vendor/etc/init/storageproxyd_androidr_gp.rc
-vendor/etc/init/systemDebuggerd.rc
 vendor/etc/init/tee_rpc.rc
 vendor/etc/init/thermald.rc
 vendor/etc/init/tsupplicant.rc
 vendor/etc/init/vaultkeeper_common.rc
+vendor/etc/init/vendor-power-default.rc
 vendor/etc/init/vendor.ril.wifionly.qcom.rc
 vendor/etc/init/vendor.samsung.hardware.biometrics.face@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.security.sem@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.security.widevine.keyprov-service.rc
 vendor/etc/init/vendor.samsung.hardware.sysinput@1.2-service.rc
-vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc
-vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
-vendor/etc/init/vendor.sprd.hardware.athuaqin@1.0-service.rc
-vendor/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.connmgr@1.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.cplog_connmgr@1.0-service.rc
-vendor/etc/init/vendor.sprd.hardware.cplog_svc@1.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.enhance@1.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.log@1.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.network@1.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.thermal@2.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.trusty@1.0-service.rc
 vendor/etc/init/vendor.sprd.hardware.wcn@1.0-service.rc
-vendor/etc/init/vendor_flash_recovery.rc
 vendor/etc/init/vndservicemanager.rc
 vendor/etc/init/wcn.rc
 vendor/etc/otpdata/input_parameters_values.txt
@@ -776,7 +562,6 @@ vendor/etc/saiv/gae/PmGenModel.bin
 vendor/etc/saiv/gae/PmGenderFeatSelIdx.bin
 vendor/etc/seccomp_policy/mediaextractor.policy
 vendor/etc/seccomp_policy/mediaextractor_sec.policy
-vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
 vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
 vendor/etc/secnvm/k250a_00000200.img
 vendor/etc/sysconfig/partner-apex-vendor-allowlist.xml
@@ -785,12 +570,12 @@ vendor/etc/tf_models/PortraitSegLP.tflite
 vendor/etc/unipnp/UniFeature.xml
 vendor/etc/vintf/manifest/engmode_manifest.xml
 vendor/etc/vintf/manifest/hyper-default-sec.xml
-vendor/etc/vintf/manifest/manifest.xml
+vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/etc/vintf/manifest/manifest_trusty.xml
 vendor/etc/vintf/manifest/radio_manifest_wifionly.xml
-vendor/etc/vintf/manifest/rebootescrow-default.xml
 vendor/etc/vintf/manifest/sec_c2_manifest_default.xml
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
+vendor/etc/vintf/manifest/vendor-power-default.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.security.widevine.keyprov-service.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
@@ -833,7 +618,6 @@ vendor/etc/fstab.ramplus
 vendor/etc/fstab.ums512_25c10
 vendor/etc/hqm_device.xml
 vendor/etc/lmkd_param.conf
-vendor/etc/mkshrc
 vendor/etc/mlogservice.conf
 vendor/etc/modem_cp_info.xml
 vendor/etc/modem_sp_info.xml
@@ -926,10 +710,8 @@ vendor/firmware/sechdcpapp.elf
 vendor/firmware/vaultkeeper.elf
 vendor/firmware/vdsp_firmware.bin
 vendor/firmware/warp_cadence.bin
-vendor/lib/hw/awinic.audio.effect.so
-vendor/lib/hw/bootctrl.default.so
+vendor/lib/hw/awinic.audio.effect.so;MAKE_COPY_RULE_ONLY
 vendor/lib/hw/dpu.ums512.so
-vendor/lib/hw/enhance.ums512.so
 vendor/lib/hw/gsp.ums512.so
 vendor/lib/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.sprd.hardware.athuaqin@1.0-impl.so
@@ -965,8 +747,6 @@ vendor/lib/npidevice/libgetswpac.so
 vendor/lib/npidevice/libgetuid.so
 vendor/lib/npidevice/libgpio.so
 vendor/lib/npidevice/libgpspc.so
-vendor/lib/npidevice/libkeypadnpi.so
-vendor/lib/npidevice/liblcdnpi.so
 vendor/lib/npidevice/liblkvnpi.so
 vendor/lib/npidevice/libmiscdata.so
 vendor/lib/npidevice/libnefuse.so
@@ -981,23 +761,15 @@ vendor/lib/npidevice/libylogtopc.so
 vendor/lib/arm.graphics-V1-ndk.so
 vendor/lib/arm.graphics-V1-ndk_platform.so
 vendor/lib/arm.graphics-V2-ndk.so
-vendor/lib/enhance.ums512.so
-vendor/lib/libGLES_mali.so
 vendor/lib/libMNN.so
-vendor/lib/libOpenCL.so
-vendor/lib/libOpenCL.so.1
-vendor/lib/libOpenCL.so.1.1
-vendor/lib/libOpenCL.so.1.2
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libWhite_point_shift.so
-vendor/lib/lib_factorytest_ft2.so
 vendor/lib/libae.so
 vendor/lib/libae3.x.so
 vendor/lib/libaf3.2.so
 vendor/lib/libaftrigger.so
 vendor/lib/libalsc3.2.so
 vendor/lib/libatm.so
-vendor/lib/libaudiofoundation.so
 vendor/lib/libaudionpi.so
 vendor/lib/libawb.so
 vendor/lib/libawb1.so
@@ -1006,10 +778,6 @@ vendor/lib/libbqbbt.so
 vendor/lib/libbt-sprd_suite.so
 vendor/lib/libcamcalitest.so
 vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libcodec2_hidl@1.1.so
-vendor/lib/libcodec2_simple_component.so
-vendor/lib/libcodec2_soft_common.so
-vendor/lib/libdav1d.so
 vendor/lib/libdeflicker.so
 vendor/lib/libeng_tok.so
 vendor/lib/libengpc_adapt.so
@@ -1028,13 +796,11 @@ vendor/lib/liblcsmgt.so
 vendor/lib/liblcswbxml2.so
 vendor/lib/liblowi_wifihal.so
 vendor/lib/liblsc.so
-vendor/lib/liblte.so
 vendor/lib/libmapuser.so
 vendor/lib/libmdf.so
 vendor/lib/libnavcore.so
 vendor/lib/libnpi_rtc.so
 vendor/lib/libnvitem_crypto.so
-vendor/lib/libomx_av1dec_sw_sprd.so
 vendor/lib/libomx_avcdec_hw_sprd.so
 vendor/lib/libomx_avcdec_hw_sprd_secure.so
 vendor/lib/libomx_avcdec_sw_sprd.so
@@ -1090,15 +856,11 @@ vendor/lib/libsensor_a803_gc08a3_backxl.so
 vendor/lib/libsensor_a803_gc5035_frontdd.so
 vendor/lib/libsensor_a804_hi846_backxl.so
 vendor/lib/libsensornpi.so
-vendor/lib/libsfplugin_ccodec_utils.so
 vendor/lib/libsnaace.so
 vendor/lib/libsnamrnb.so
 vendor/lib/libsnamrwb.so
 vendor/lib/libsprd_fcell_ss.so
-vendor/lib/libsprd_omx_core.so
 vendor/lib/libsprdaic.so
-vendor/lib/libsprdaudiohal@5.0.so
-vendor/lib/libsprdaudiohal@6.0.so
 vendor/lib/libsprdaudiohal_deathhandlerv6.so
 vendor/lib/libsprdee.so
 vendor/lib/libsprdee_adapter.so
@@ -1106,15 +868,12 @@ vendor/lib/libsprdlsc.so
 vendor/lib/libsprdscenedetect.so
 vendor/lib/libsupl.so
 vendor/lib/libteeproduction.so
-vendor/lib/libtensorflowlite_c.so
 vendor/lib/libtracedump.so
 vendor/lib/libtrustyHalHelper.so
-vendor/lib/libunnengine.so
 vendor/lib/libvcm_a801_gc8034_backly_gt9769.so
 vendor/lib/libvcm_a802_hi846_backhlt_fp5510.so
 vendor/lib/libvcm_a803_gc08a3_backhxl_cn3927v.so
 vendor/lib/libvdspservice.so
-vendor/lib/libvpx.so
 vendor/lib/libvsp_ca.so
 vendor/lib/libwapi.so
 vendor/lib/libwcn-vendor.so
@@ -1131,9 +890,7 @@ vendor/lib/vendor.sprd.hardware.thermal@2.0.so
 vendor/lib/vendor.sprd.hardware.trusty@1.0.so
 vendor/lib/vendor.sprd.hardware.vdsp@1.0.so
 vendor/lib/vendor.sprd.hardware.wcn@1.0.so
-vendor/lib64/hw/bootctrl.default.so
 vendor/lib64/hw/dpu.ums512.so
-vendor/lib64/hw/enhance.ums512.so
 vendor/lib64/hw/gsp.ums512.so
 vendor/lib64/hw/vendor.samsung.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so
@@ -1151,42 +908,27 @@ vendor/lib64/npidevice/PQTune.ums512.so
 vendor/lib64/npidevice/libcheckkeybox.so
 vendor/lib64/npidevice/libfactoryhuaqin.so
 vendor/lib64/npidevice/libgetuid.so
-vendor/lib64/npidevice/liblcdnpi.so
 vendor/lib64/arm.graphics-V1-ndk.so
 vendor/lib64/arm.graphics-V1-ndk_platform.so
 vendor/lib64/arm.graphics-V2-ndk.so
-vendor/lib64/enhance.ums512.so
 vendor/lib64/libFaceAuth.so
-vendor/lib64/libGLES_mali.so
 vendor/lib64/libMNN.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libOpenCL.so.1
-vendor/lib64/libOpenCL.so.1.1
-vendor/lib64/libOpenCL.so.1.2
 vendor/lib64/libOpenCv.camera.samsung.so
-vendor/lib64/libSecC2ComponentStore.so
 vendor/lib64/libWhite_point_shift.so
-vendor/lib64/libaudiofoundation.so
 vendor/lib64/libaudionpi.so
 vendor/lib64/libbt-sprd_suite.so
 vendor/lib64/libcamcalitest.so
 vendor/lib64/libcamera2ndk_vendor.so
-vendor/lib64/libcodec2_hidl@1.1.so
-vendor/lib64/libcodec2_sec_aacdec.so
 vendor/lib64/libcodec2_sec_aacenc.so
 vendor/lib64/libcodec2_sec_amrnbdec.so
 vendor/lib64/libcodec2_sec_amrwbdec.so
 vendor/lib64/libcodec2_sec_flacdec.so
-vendor/lib64/libcodec2_sec_imadec.so
 vendor/lib64/libcodec2_sec_mp3dec.so
 vendor/lib64/libcodec2_sec_mp4vdec.so
 vendor/lib64/libcodec2_sec_soft_common.so
 vendor/lib64/libcodec2_sec_vc1dec.so
-vendor/lib64/libcodec2_simple_component.so
 vendor/lib64/libcodec2_soft_ac4dec.so
-vendor/lib64/libcodec2_soft_common.so
 vendor/lib64/libcodec2_soft_eac3dec.so
-vendor/lib64/libdav1d.so
 vendor/lib64/libdk_vnd_service_core.so
 vendor/lib64/libeng_tok.so
 vendor/lib64/libengbt.so
@@ -1198,7 +940,6 @@ vendor/lib64/libengmode_tlc.so
 vendor/lib64/libgnssmgt.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libhqm_hwparam.so
-vendor/lib64/libhyper.so
 vendor/lib64/libiwnpi.so
 vendor/lib64/libjpeg_hw_sprd.so
 vendor/lib64/libjpegenc_sw_sprd.so
@@ -1208,11 +949,9 @@ vendor/lib64/liblcscp.so
 vendor/lib64/liblcsmgt.so
 vendor/lib64/liblcswbxml2.so
 vendor/lib64/liblowi_wifihal.so
-vendor/lib64/liblte.so
 vendor/lib64/libmapuser.so
 vendor/lib64/libmdf.so
 vendor/lib64/libnavcore.so
-vendor/lib64/libomx_av1dec_sw_sprd.so
 vendor/lib64/libomx_avcdec_hw_sprd.so
 vendor/lib64/libomx_avcdec_hw_sprd_secure.so
 vendor/lib64/libomx_avcdec_sw_sprd.so
@@ -1248,27 +987,20 @@ vendor/lib64/libsecril-client.so
 vendor/lib64/libsecure_storage.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libsensornpi.so
-vendor/lib64/libsfplugin_ccodec_utils.so
 vendor/lib64/libsnaace.so
 vendor/lib64/libsnamrnb.so
 vendor/lib64/libsnamrwb.so
-vendor/lib64/libsoft_attestation_cert.so
 vendor/lib64/libsomxcmn.so
 vendor/lib64/libsprd_fcell_ss.so
-vendor/lib64/libsprd_omx_core.so
-vendor/lib64/libsprdaudiohal@5.0.so
-vendor/lib64/libsprdaudiohal@6.0.so
 vendor/lib64/libsprdaudiohal_deathhandlerv6.so
 vendor/lib64/libsprdee.so
 vendor/lib64/libsprdee_adapter.so
 vendor/lib64/libstork_shared.so
 vendor/lib64/libsupl.so
 vendor/lib64/libteeproduction.so
-vendor/lib64/libtensorflowlite_c.so
 vendor/lib64/libtlc_comm_iccc.so
 vendor/lib64/libtlc_direct_comm_iccc.so
 vendor/lib64/libtrustyHalHelper.so
-vendor/lib64/libunnengine.so
 vendor/lib64/libvdspservice.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/libvkservice.so
@@ -1327,3 +1059,67 @@ vendor/usr/keylayout/adaptive_ts.kl
 vendor/usr/keylayout/gpio-keys.kl
 vendor/atcmdlist
 vendor/ueventd.rc
+
+# Camera (provider impl)
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl-sprd.so;MAKE_COPY_RULE_ONLY
+vendor/lib/android.hardware.camera.provider@2.4-legacy-sprd.so;MAKE_COPY_RULE_ONLY
+vendor/lib/android.hardware.camera.provider@2.4-external-sprd.so;MAKE_COPY_RULE_ONLY
+
+# Libraries
+vendor/lib/libc++_shared.so
+
+# Permissions
+vendor/etc/permissions/android.hardware.bluetooth_le.xml
+vendor/etc/permissions/android.hardware.broadcastradio.xml
+vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml
+vendor/etc/permissions/android.hardware.camera.front.xml
+vendor/etc/permissions/android.hardware.camera.manual_sensor.xml
+vendor/etc/permissions/android.hardware.location.gps.xml
+vendor/etc/permissions/android.hardware.opengles.aep.xml
+vendor/etc/permissions/android.hardware.reboot_escrow.xml
+vendor/etc/permissions/android.hardware.sensor.accelerometer.xml
+vendor/etc/permissions/android.hardware.sensor.compass.xml
+vendor/etc/permissions/android.hardware.sensor.gyroscope.xml
+vendor/etc/permissions/android.hardware.sensor.light.xml
+vendor/etc/permissions/android.hardware.sensor.stepcounter.xml
+vendor/etc/permissions/android.hardware.sensor.stepdetector.xml
+vendor/etc/permissions/android.hardware.telephony.ims.xml
+vendor/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml
+vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+vendor/etc/permissions/android.hardware.touchscreen.xml
+vendor/etc/permissions/android.hardware.usb.accessory.xml
+vendor/etc/permissions/android.hardware.usb.host.xml
+vendor/etc/permissions/android.hardware.vulkan.compute-0.xml
+vendor/etc/permissions/android.hardware.vulkan.level-0.xml
+vendor/etc/permissions/android.hardware.vulkan.level-1.xml
+vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml
+vendor/etc/permissions/android.hardware.wifi.direct.xml
+vendor/etc/permissions/android.hardware.wifi.passpoint.xml
+vendor/etc/permissions/android.hardware.wifi.xml
+vendor/etc/permissions/android.software.controls.xml
+vendor/etc/permissions/android.software.cts.xml
+vendor/etc/permissions/android.software.ipsec_tunnels.xml
+vendor/etc/permissions/android.software.managed_users.xml
+vendor/etc/permissions/android.software.midi.xml
+vendor/etc/permissions/android.software.opengles.deqp.level-2021-03-01.xml
+vendor/etc/permissions/android.software.secure_lock_screen.xml
+vendor/etc/permissions/android.software.verified_boot.xml
+vendor/etc/permissions/android.software.vulkan.deqp.level-2021-03-01.xml
+vendor/etc/permissions/vendor_remove_telephony_features.xml
+
+# SELinux
+vendor/etc/selinux/plat_pub_versioned.cil
+vendor/etc/selinux/plat_sepolicy_vers.txt
+vendor/etc/selinux/selinux_denial_metadata
+vendor/etc/selinux/vendor_hwservice_contexts
+vendor/etc/selinux/vendor_mac_permissions.xml
+vendor/etc/selinux/vendor_property_contexts
+vendor/etc/selinux/vendor_seapp_contexts
+vendor/etc/selinux/vendor_sepolicy_version
+vendor/etc/selinux/vndservice_contexts
+
+# Restored
+vendor/etc/init/android.hardware.graphics.composer@2.3-service.rc
+vendor/etc/init/systemDebuggerd.rc
+vendor/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc
+vendor/etc/wifi/wpa_supplicant.conf

@@ -34,7 +34,6 @@ persist.sys.extrainfo=
 persist.sys.fuse.passthrough.enable=true
 persist.wm.extensions.enabled=true
 remote_provisioning.enable_rkpd=true
-remote_provisioning.hostname=remoteprovisioning.googleapis.com
 restore.feature.use_samsung_smart_switch_flow=1
 ro.com.google.gmsversion=14_202401
 ro.opa.eligible_device=true

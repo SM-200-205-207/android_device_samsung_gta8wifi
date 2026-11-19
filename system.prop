@@ -19,7 +19,6 @@ dalvik.vm.dexopt.secondary=true
 dalvik.vm.dexopt.thermal-cutoff=2
 dalvik.vm.finalizer-timeout-ms=60000
 dalvik.vm.image-dex2oat-Xms=64m
-dalvik.vm.image-dex2oat-Xmx=64m
 dalvik.vm.lockprof.threshold=500
 dalvik.vm.madvise.artfile.size=4294967295
 dalvik.vm.madvise.odexfile.size=104857600
@@ -60,10 +59,7 @@ ro.build.2ndbrand=false
 ro.build.PDA=X200XXS6DYG6
 ro.build.changelist=28693178
 ro.build.display_build_number=true
-ro.build.official.developer=false
-ro.build.official.release=true
 ro.build.selinux=1
-ro.build.version.oneui=60100
 ro.build.version.security_index=1
 ro.build.version.sem=3401
 ro.build.version.sep=150100
@@ -75,14 +71,12 @@ ro.fta_sw_ver=X200.001
 ro.kernel.qemu=0
 ro.oem_unlock_supported=1
 ro.postinstall.fstab.prefix=/system
-ro.product_ship=false
+ro.product_ship=true
 ro.qq.camera.sensor=3
 ro.security.fips.ux=Disabled
 ro.system.build.version.sehi=3403
 ro.system.qb.id=99124382
+ro.vendor.qti.va_aosp.support=1
 security.perf_harden=1
-sys.hqm.support=false
-
-
-# Telephony
-ro.radio.noril=true
+sys.hqm.support=true
+ro.frp.pst=/dev/block/persistent
