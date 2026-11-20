@@ -1,12 +1,17 @@
 [
   {
-    "repository": "Zoro-15/proprietory-vendor-smx200-gta8wifi",
+    "repository": "SM-200-205-207/proprietory-vendor-smx200-gta8wifi",
     "target_path": "vendor/samsung/gta8wifi",
     "branch": "main"
   },
   {
-    "repository": "Zoro-15/android-kernel-smx200-gta8wifi",
+    "repository": "SM-200-205-207/android-kernel-smx200-gta8wifi",
     "target_path": "kernel/samsung/gta8wifi",
     "branch": "android-14"
+  },
+  {
+    "repository": "sprd-oss-devs/android_hardware_sprd",
+    "target_path": "hardware/sprd",
+    "branch": "lineage-21"
   }
 ]

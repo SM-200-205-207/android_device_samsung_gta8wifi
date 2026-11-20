@@ -36,29 +36,14 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs 
 ```
 
 ### 2. Configure Local Manifest
-Add the Samsung Galaxy Tab A8 repositories using the provided local manifest:
+Fetch the local manifest for Samsung Galaxy Tab A8 directly via `curl`:
 ```bash
 mkdir -p .repo/local_manifests
-cp device/samsung/gta8wifi/local_manifests/gta8wifi.xml .repo/local_manifests/
-```
-
-Or manually create `.repo/local_manifests/gta8wifi.xml`:
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-    <!-- Samsung Galaxy Tab A8 10.5" Wi-Fi (SM-X200 / gta8wifi) -->
-    <!-- Device Tree -->
-    <project name="Zoro-15/android-smx200-gta8wifi" path="device/samsung/gta8wifi" remote="github" revision="main" />
-    <!-- Vendor Tree -->
-    <project name="Zoro-15/proprietory-vendor-smx200-gta8wifi" path="vendor/samsung/gta8wifi" remote="github" revision="main" />
-    <!-- Kernel Tree -->
-    <project name="Zoro-15/android-kernel-smx200-gta8wifi" path="kernel/samsung/gta8wifi" remote="github" revision="android-14" />
-    <!-- Hardware / SPRD HAL dependencies -->
-    <project name="sprd-oss-devs/android_hardware_sprd" path="hardware/sprd" remote="github" revision="lineage-21" />
-</manifest>
+curl -o .repo/local_manifests/gta8wifi.xml -L https://raw.githubusercontent.com/SM-200-205-207/android_device_samsung_gta8wifi/main/gta8wifi.xml
 ```
 
 ### 3. Sync Repositories
+Sync the ROM tree and all required device repositories:
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
@@ -77,4 +62,15 @@ lunch lineage_gta8wifi-userdebug
 # 3. Compile full ROM package
 mka bacon -j$(nproc --all)
 ```
+
+---
+
+## Credits & Acknowledgements
+
+Special thanks to the following developers and upstream projects whose work made this bringup possible:
+
+* **[İsmail Demirbaş (@ismail-demirbas)](https://github.com/ismail-demirbas)** 
+* **[SebaUbuntu & contributors / aospdtgen](https://github.com/sebaubuntu/aospdtgen)** — For the automated AOSP device tree generator from OEM dumps.
+* **[The LineageOS Project](https://github.com/LineageOS)** & **Galaxy Tab A7 (`gta4xlwifi` / `gta4wifi`) Maintainers** —  platform references, partition layouts, and init blueprints.
+* **[sprd-oss-devs](https://github.com/sprd-oss-devs)** — Unisoc Tiger T618 (`ums512`) Android 14 HAL and platform support.
 

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!-- Samsung Galaxy Tab A8 10.5" Wi-Fi (SM-X200 / gta8wifi) -->
-    <!-- Device Tree -->
-    <project name="Zoro-15/android-smx200-gta8wifi" path="device/samsung/gta8wifi" remote="github" revision="main" />
+  <remote name="github" fetch="https://github.com" />
 
-    <!-- Vendor Tree -->
-    <project name="Zoro-15/proprietory-vendor-smx200-gta8wifi" path="vendor/samsung/gta8wifi" remote="github" revision="main" />
+  <!-- Samsung Galaxy Tab A8 10.5" Wi-Fi (SM-X200 / gta8wifi) -->
+  <!-- Device Tree -->
+  <project path="device/samsung/gta8wifi" name="SM-200-205-207/android_device_samsung_gta8wifi" revision="main" remote="github" />
 
-    <!-- Kernel Tree -->
-    <project name="Zoro-15/android-kernel-smx200-gta8wifi" path="kernel/samsung/gta8wifi" remote="github" revision="android-14" />
+  <!-- Proprietary Vendor Tree -->
+  <project path="vendor/samsung/gta8wifi" name="SM-200-205-207/proprietory-vendor-smx200-gta8wifi" revision="main" remote="github" />
 
-    <!-- Hardware / SPRD HAL dependencies -->
-    <project name="sprd-oss-devs/android_hardware_sprd" path="hardware/sprd" remote="github" revision="lineage-21" />
+  <!-- Kernel Source Tree -->
+  <project path="kernel/samsung/gta8wifi" name="SM-200-205-207/android-kernel-smx200-gta8wifi" revision="android-14" remote="github" />
+
+  <!-- Hardware / SPRD HAL dependencies -->
+  <project path="hardware/sprd" name="sprd-oss-devs/android_hardware_sprd" revision="lineage-21" remote="github" />
 </manifest>

@@ -165,4 +165,11 @@ BOARD_WPA_SUPPLICANT_HAL := hardware/interfaces/wifi/supplicant/aidl
 # Telephony
 TARGET_NO_TELEPHONY := true
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib/hw/hwcomposer.ums512.so|libui_shim_gta8wifi.so \
+    /vendor/lib64/hw/hwcomposer.ums512.so|libui_shim_gta8wifi.so \
+    /vendor/lib/hw/camera.ums512.so|libui_shim_gta8wifi.so
+
 include vendor/samsung/gta8wifi/BoardConfigVendor.mk
+
