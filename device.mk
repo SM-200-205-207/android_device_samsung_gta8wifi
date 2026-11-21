@@ -97,6 +97,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.ums512_25c10:$(TARGET_COPY_OUT_RAMDISK)/fstab.ums512_25c10
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    $(LOCAL_PATH)/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.recovery.ums512_25c10.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.ums512_25c10.rc
 
 # Compatibility matrix
