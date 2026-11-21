@@ -501,6 +501,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_binary {
     name: "gta8wifi_vfix_applypatch",
+    stem: "applypatch",
     owner: "samsung",
     target: {
         android_arm64: {
@@ -531,6 +532,7 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "gta8wifi_vfix_android.hardware.power.stats@1.0-service.mock",
+    stem: "android.hardware.power.stats@1.0-service.mock",
     owner: "samsung",
     target: {
         android_arm64: {

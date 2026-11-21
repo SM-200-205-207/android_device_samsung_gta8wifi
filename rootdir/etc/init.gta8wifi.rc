@@ -31,6 +31,22 @@
 on boot
     write /proc/sys/vm/swappiness 160
 
+    # Backlight permissions for android.hardware.light
+    chown system system /sys/class/backlight/sprd_backlight/brightness
+    chown system system /sys/class/backlight/sprd_backlight/max_brightness
+    chmod 0660 /sys/class/backlight/sprd_backlight/brightness
+    chmod 0660 /sys/class/backlight/sprd_backlight/max_brightness
+
+    chown system system /sys/class/backlight/panel0-backlight/brightness
+    chown system system /sys/class/backlight/panel0-backlight/max_brightness
+    chmod 0660 /sys/class/backlight/panel0-backlight/brightness
+    chmod 0660 /sys/class/backlight/panel0-backlight/max_brightness
+
+    chown system system /sys/class/backlight/panel/brightness
+    chown system system /sys/class/backlight/panel/max_brightness
+    chmod 0660 /sys/class/backlight/panel/brightness
+    chmod 0660 /sys/class/backlight/panel/max_brightness
+
 on init
     # CONFIG_SEC_DEBUG ++
     # reset_reason

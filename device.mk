@@ -138,8 +138,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio@6.0-impl \
     android.hardware.graphics.composer@2.3-service \
-    android.hardware.power.stats@1.0-service.mock \
-    applypatch \
+    gta8wifi_vfix_android.hardware.power.stats@1.0-service.mock \
+    gta8wifi_vfix_applypatch \
     enhance.ums512 \
     hwcomposer.ums512 \
     libSecC2ComponentStore \
@@ -201,7 +201,9 @@ PRODUCT_COPY_FILES += \
     device/samsung/gta8wifi/vendor_fixes/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc \
     device/samsung/gta8wifi/vendor_fixes/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc \
     device/samsung/gta8wifi/vendor_fixes/etc/init/vendor.sprd.hardware.athuaqin@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.athuaqin@1.0-service.rc \
-    device/samsung/gta8wifi/vendor_fixes/etc/init/vendor.sprd.hardware.cplog_svc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.cplog_svc@1.0-service.rc
+    device/samsung/gta8wifi/vendor_fixes/etc/init/vendor.sprd.hardware.cplog_svc@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.cplog_svc@1.0-service.rc \
+    device/samsung/gta8wifi/vendor_fixes/etc/init/lights-default-sec.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-default-sec.rc \
+    device/samsung/gta8wifi/vendor_fixes/etc/init/vendor-power-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-power-default.rc
 
 PRODUCT_COPY_FILES += device/samsung/gta8wifi/vendor_fixes/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc
 PRODUCT_COPY_FILES += frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.biometrics.face.xml
